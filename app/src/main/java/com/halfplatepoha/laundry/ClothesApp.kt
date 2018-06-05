@@ -8,4 +8,4 @@ class ClothesApp : Application() {
         super.onCreate()
     }
 
-}git
+}
