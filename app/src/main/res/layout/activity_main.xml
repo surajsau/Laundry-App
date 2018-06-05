@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppTitle"
+        android:text="Laundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_marginTop="70dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search cloth"
+        android:layout_below="@id/tvAppTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/etSearch"
+        android:id="@+id/rlDaily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:orientation="horizontal"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCupboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cupboard"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@id/rlDaily"
+        android:background="@drawable/rounded_rectangle_white"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLaundryBasket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cupboard"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@id/btnCupboard"
+        android:background="@drawable/rounded_rectangle_white"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnWashingMachine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cupboard"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@id/btnLaundryBasket"
+        android:background="@drawable/rounded_rectangle_white"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
