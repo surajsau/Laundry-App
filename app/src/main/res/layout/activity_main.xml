@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".main.MainActivity"
     android:background="@color/bg"
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
@@ -31,6 +31,7 @@
         android:id="@+id/rlDaily"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:listitem="@layout/layout_daily"
         tools:orientation="horizontal"/>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -49,7 +50,7 @@
         android:id="@+id/btnLaundryBasket"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cupboard"
+        android:text="Laundry Basket"
         android:gravity="left|center_vertical"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
@@ -61,7 +62,7 @@
         android:id="@+id/btnWashingMachine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cupboard"
+        android:text="Washing Machine"
         android:gravity="left|center_vertical"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"

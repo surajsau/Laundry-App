@@ -1,15 +1,9 @@
 package com.halfplatepoha.laundry
 
-interface Constants {
+const val STATUS_LAUNDRY_BASKET = 12
+const val STATUS_WASHING_MACHINE = 13
+const val STATUS_DRYING = 14
+const val STATUS_CUPBOARD = 15
+const val STATUS_RUN = 16
 
-    companion object {
-
-        val STATUS_LAUNDRY_BASKET = 12
-        val STATUS_WASHING_MACHINE = 13
-        val STATUS_DRYING = 14
-        val STATUS_CUPBOARD = 15
-        val STATUS_RUN = 16
-
-    }
-
-}
+const val OCCASION_RUNNING = "Running"

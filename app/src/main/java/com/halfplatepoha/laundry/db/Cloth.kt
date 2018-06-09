@@ -8,5 +8,6 @@ open class Cloth : RealmObject() {
     var icon: String? = null
     var status: Int = 0
     var lastUpdated: Long = 0
+    var isTop: Boolean = false
 
 }
